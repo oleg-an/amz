@@ -17,6 +17,9 @@ class BlocksNode {
 
     add(value) {
         this.#blocks.appendChild(value.getElement());
+    }
+
+    updateProgress() {
         this.#count++;
         this.#progressValue.textContent = this.#count;
     }

@@ -37,6 +37,7 @@ function* mapper(objects) {
             setTimeout(() => {
                 const description = getRandomDescriptionByIndex(i);
                 cellNode.addDescription(description);
+                blocksNode.updateProgress();
 
                 resolve();
             }, Math.round(Math.random() * 9000) + 1000);
