@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: #000000;
+}
+
+button {
+    height: 32px;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+    text-align: center;
+    background: #5DA9E0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #3597DD;
+}
+
+button:disabled {
+    background: #E5E5E5;
+    cursor: default;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1A5A9E;
+}
+
+.block-limiter {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}

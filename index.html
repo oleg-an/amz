@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./assets/vk.svg">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='randomStrings/css'>
+    <script src="./scripts/content.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="./scripts/nodes.js"></script>
+    <script src="./scripts/queue.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__body block-limiter">
+        <img class="header__logo" src="./assets/vk.svg">
+
+        <div class="header__links">
+            <a href="/" class="header__link">
+                Menu Item 1
+            </a>
+
+            <a href="/" class="header__link">
+                Menu Item 2
+            </a>
+
+            <a href="/" class="header__link">
+                Menu Item 3
+            </a>
+
+            <a href="/" class="header__link">
+                Menu Item 4
+            </a>
+        </div>
+
+        <div class="header__login">
+            LOG IN / SIGN UP
+        </div>
+    </div>
+</header>
+
+<div class="search">
+    <form id="search-form" class="search__body block-limiter">
+        <div class="search__input-block">
+            <input id="length" type="number"
+                   class="search__input-block--input"
+                   required
+                   autocomplete="off"
+                   placeholder=" "
+                   min="1">
+            <label for="length" class="search__input-block--label">Length</label>
+        </div>
+
+        <div class="search__input-block">
+            <input id="limit" type="number"
+                   class="search__input-block--input"
+                   required
+                   autocomplete="off"
+                   placeholder=" "
+                   min="1">
+            <label for="limit" class="search__input-block--label">Limit</label>
+        </div>
+
+        <button id="search-button" type="submit" class="search__button search__input-block">
+            Start
+        </button>
+    </form>
+</div>
+
+<div class="search-results block-limiter">
+    <div id="progress" class="search-results__progress">
+        Progress: <span id="progress-value">0</span> of <span id="block-length">0</span>
+    </div>
+
+    <div id="blocks" class="search-results__items">
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer__body block-limiter">
+        <div>
+            <div class="footer__title">
+                Menu 1
+            </div>
+            <a href="/" class="footer__item">
+                Menu Item 1
+            </a>
+            <a href="/" class="footer__item">
+                Menu Item 2
+            </a>
+            <a href="/" class="footer__item">
+                Menu Item 3
+            </a>
+            <a href="/" class="footer__item">
+                Menu Item 4
+            </a>
+        </div>
+
+        <div>
+            <div class="footer__title">
+                Menu 2
+            </div>
+            <a href="/" class="footer__item">
+                Menu Item 1
+            </a>
+            <a href="/" class="footer__item">
+                Menu Item 2
+            </a>
+            <a href="/" class="footer__item">
+                Menu Item 3
+            </a>
+            <a href="/" class="footer__item">
+                Menu Item 4
+            </a>
+        </div>
+
+        <div>
+            <div class="footer__title">
+                Contacts
+            </div>
+
+            <a href="/" class="footer__item">
+                Phone
+            </a>
+            <a href="/" class="footer__item">
+                Email
+            </a>
+        </div>
+
+        <div class="footer__copyright">
+            <div>© Lev Tolstoy</div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
