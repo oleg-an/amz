@@ -45,5 +45,5 @@ const getRandomDescriptionByIndex = (index) => {
     if (index < sentences.length) {
         return sentences[index];
     }
-    return Math.floor(Math.random() * sentences.length);
+    return sentences[Math.floor(Math.random() * sentences.length)];
 };
