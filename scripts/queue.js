@@ -39,7 +39,7 @@ function* mapper(objects) {
                 cellNode.addDescription(description);
 
                 resolve();
-            }, Math.round(Math.random() * 1000) + 1000);
+            }, Math.round(Math.random() * 9000) + 1000);
         });
     }
 }
