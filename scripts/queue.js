@@ -11,7 +11,6 @@ function queue(objects, mapper, limit) {
     }
     return Promise.all(promises);
 }
-
 function iterateSearchResult(generator, onEnded) {
     const next = generator.next();
     if (next.done) {
@@ -40,7 +39,7 @@ function* mapper(objects) {
                 blocksNode.updateProgress();
 
                 resolve();
-            }, Math.round(Math.random() * 9000) + 1000);
+            }, Math.round(Math.random() * 3000) + 1000);
         });
     }
 }

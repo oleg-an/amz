@@ -13,37 +13,3 @@ const text = 'Well, Prince, so Genoa and Lucca are now just family estates of th
     'Prince Vasili always spoke languidly, like an actor repeating a stale part. Anna Pavlovna Scherer on the contrary, despite her forty years, overflowed with animation and impulsiveness. To be an enthusiast had become her social vocation and, sometimes even when she did not feel like it, she became enthusiastic in order not to disappoint the expectations of those who knew her. The subdued smile which, though it did not suit her faded features, always played round her lips expressed, as in a spoiled child, a continual consciousness of her charming defect, which she neither wished, nor could, nor considered it necessary, to correct. \n' +
     'In the midst of a conversation on political matters Anna Pavlovna burst out: \n' +
     '"Oh, don\'t speak to me of Austria. Perhaps I don\'t understand things, but Austria never has wished, and does not wish, for war. She is betraying us! Russia alone must save Europe. Our gracious sovereign recognizes his high vocation and will be true to it. That is the one thing I have faith in! Our good and wonderful sovereign has to perform the noblest role on earth, and he is so virtuous and noble that God will not forsake him. He will fulfill his vocation and crush the hydra of revolution, which has become more terrible than ever in the person of this murderer and villain! We alone must avenge the blood of the just one.... Whom, I ask you, can we rely on?... England with her commercial spirit will not and cannot understand the Emperor Alexander\'s loftiness of soul. She has refused to evacuate Malta. She wanted to find, and still seeks, some secret motive in our actions. What answer did Novosiltsev get? None. The English have not understood and cannot understand the self-abnegation of our Emperor who wants nothing for himself, but only desires the good of mankind. And what have they promised? Nothing! And what little they have promised they will not perform! Prussia has always declared that Buonaparte is invincible, and that all Europe is powerless before him.... And I don\'t believe a word that Hardenburg says, or Haugwitz either. This famous Prussian neutrality is just a trap. I have faith only in God and the lofty destiny of our adored monarch. He will save Europe!';
-
-const words = text.split(' ');
-const sentences = text.split('.');
-
-const getRandomRows = (length) => {
-    const result = [];
-    for (let i = 0; i < length; i++) {
-        const rowMaxLength = Math.floor(Math.random() * (201 - 10) + 10);
-        const wordIndex = Math.floor(Math.random() * words.length);
-
-        let row = words[wordIndex];
-
-        while (row.length <= rowMaxLength) {
-            const wordIndex = Math.floor(Math.random() * words.length);
-            row += ` ${words[wordIndex]}`;
-        }
-        result.push(row);
-    }
-
-    return result;
-};
-
-/*
-Из задачи: "описание -- N-ое предложение из текста ниже (Текст для вставки), где N -
-порядковый номер обрабатываемого элемента в массиве."
-    - условие не всегда может выполняться (массив может быть большим), поэтому добавил random
- */
-
-const getRandomDescriptionByIndex = (index) => {
-    if (index < sentences.length) {
-        return sentences[index];
-    }
-    return sentences[Math.floor(Math.random() * sentences.length)];
-};

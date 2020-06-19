@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const limit = parseInt(document.getElementById('limit').value, 10);
 
         if (limit > length) {
-            alert('Limit must be less than or equal to Length');
+            alert('The limit must be less than or equal to the length');
             return;
         }
 

@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./assets/vk.svg">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='randomStrings/css'>
-    <script src="./scripts/content.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/constants.js"></script>
+    <script src="./scripts/search-results-utils.js"></script>
+    <script src="./scripts/main.js"></script>
     <script src="./scripts/nodes.js"></script>
     <script src="./scripts/queue.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
@@ -50,6 +51,7 @@
                    required
                    autocomplete="off"
                    placeholder=" "
+                   value="30"
                    min="1">
             <label for="length" class="search__input-block--label">Length</label>
         </div>
@@ -60,6 +62,7 @@
                    required
                    autocomplete="off"
                    placeholder=" "
+                   value="2"
                    min="1">
             <label for="limit" class="search__input-block--label">Limit</label>
         </div>
