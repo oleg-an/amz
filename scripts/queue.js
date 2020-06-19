@@ -11,6 +11,7 @@ function queue(objects, mapper, limit) {
     }
     return Promise.all(promises);
 }
+
 function iterateSearchResult(generator, onEnded) {
     const next = generator.next();
     if (next.done) {
